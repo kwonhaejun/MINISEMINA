@@ -23,7 +23,7 @@ $('#button-addon2').click(function() {
     alert(addTask);
 	$.ajax({
         method : "GET",
-        url : `http://localhost:5000/add?name=${addTask}`, //전송
+        url : `http://localhost:5000/add?name=${addTask}`,  //전송
         datatype:"JSON",
     })
     .done(function(data) {
